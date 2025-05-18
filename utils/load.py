@@ -24,7 +24,7 @@ logging.basicConfig(
 )
 
 # Konfigurasi Google Sheets
-SERVICE_ACCOUNT_FILE = "censdored.json"
+SERVICE_ACCOUNT_FILE = "censored.json"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets "]
 SPREADSHEET_ID = "censored"
 SHEET_RANGE = "Sheet1!A1:G1000"
