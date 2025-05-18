@@ -1,0 +1,5 @@
+google_api_python_client==2.169.0
+pandas==2.2.3
+protobuf==6.31.0
+scrapy==2.13.0
+SQLAlchemy==2.0.41

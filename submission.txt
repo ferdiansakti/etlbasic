@@ -1,0 +1,43 @@
+Semua file berada dalam satu folder dan memiliki subfolder utils dan test yang memiliki fungsi masing-masing, berikut perintah untuk menjalankan masing-masing script :
+Pastikan menjalankan script ini dari root directory.
+
+# 1. Menjalankan extract
+python3 utils\extract.py
+
+# 2. Menjalankan transform
+python3 utils\transform.py
+
+# 3. Menjalankan load
+python3 utils\load.py
+
+# 4. Menjalankan test extract
+python -m coverage run -m unittest test/test_extract.py
+python -m unittest test\test_extract.py -v
+python -m coverage report -m
+
+# 5. Menjalankan test transform
+python -m coverage run -m unittest test/test_transform.py
+python -m unittest test\test_transform.py -v
+python -m coverage report -m
+
+# 6. Menjalankan test load
+python -m coverage run -m unittest test/test_load.py
+python -m unittest test\test_load.py -v
+python -m coverage report -m
+
+# 7. Menjalankan coverage test
+python -m coverage run -m unittest discover test
+python -m coverage report -m
+python -m coverage html
+
+# 8. Menjalankan main.py
+python3 main.py
+
+# 9. Credential login pgAdmin PostgreSQL
+username : postgres
+password : 123456
+port : 5432
+database : savetosql
+
+# 10. Link Google Spreadsheet
+https://docs.google.com/spreadsheets/d/1wpMowBvWA2vkPtCWVZNJH2Mwyl729rKNEOArrmXrTPU/edit?usp=sharing
